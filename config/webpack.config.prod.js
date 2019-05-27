@@ -101,6 +101,7 @@ module.exports = smp.wrap({
     new HtmlPlugin({
       title: 'React和TypeScript项目', //此处可动态修改public里的index.html的标题
       template: paths.appHtml, //模板路径
+      //favicon只需要在生产模式下设置
       favicon:'./favicon.ico',
       minify: {
         removeComments: true, //去除注释
